@@ -12,6 +12,7 @@
         <module>rabbitmq-consumer</module>
         <module>eureka-server</module>
         <module>rabbitmq-producer</module>
+        <module>util-common</module>
     </modules>
 
     <properties>

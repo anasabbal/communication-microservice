@@ -1,11 +1,23 @@
 spring:
+
   application:
     name: producer
   rabbitmq:
-    password: ${RABBITMQ-PASSWORD}
-    username: ${RABBITMQ-USERNAME}
-    host: ${RABBITMQ-HOST}
-    port: ${RABBITMQ-PORT}
+    password: guest
+    username: guest
+    host: localhost
+    port: 15672
+  cloud:
+    stream:
+      producer:
+        produce: false
+      default-binder: rabbit
+      bindings:
+        userProducer-out-0:
+          destination: users
+          producer:
+            required-groups:
+              - usersGroup
 
 eureka:
   client:

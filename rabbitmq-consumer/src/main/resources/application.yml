@@ -1,13 +1,28 @@
 spring:
+  cloud:
+    stream:
+      function:
+        bindings:
+          destination: users
+          group: usersGroup
+          userConsumer-in-0:
+            destination: users
+            group: usersGroup
+  rabbitmq:
+    password: guest
+    username: guest
+    host: localhost
+    port: 15672
+
   application:
     name: consumer
-  rabbitmq:
-    password: ${RABBITMQ-PASSWORD}
-    username: ${RABBITMQ-USERNAME}
-    host: ${RABBITMQ-HOST}
-    port: ${RABBITMQ-PORT}
+
 
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka
+
+
+server:
+  port: 2003

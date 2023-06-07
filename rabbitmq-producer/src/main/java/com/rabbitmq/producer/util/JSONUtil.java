@@ -1,13 +1,13 @@
 package com.rabbitmq.producer.util;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import lombok.SneakyThrows;
+
 
 public interface JSONUtil {
     ObjectMapper objectMapper = new ObjectMapper();
 
-    @SneakyThrows
-    static String toJSON(Object object) {
+    static String toJSON(Object object) throws JsonProcessingException {
         return objectMapper.writeValueAsString(object);
     }
 }
