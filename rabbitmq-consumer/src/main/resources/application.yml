@@ -1,13 +1,11 @@
 spring:
   cloud:
     stream:
-      function:
-        bindings:
+      bindings:
+        userConsumer-in-0:
           destination: users
           group: usersGroup
-          userConsumer-in-0:
-            destination: users
-            group: usersGroup
+
   rabbitmq:
     password: guest
     username: guest
