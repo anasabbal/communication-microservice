@@ -13,6 +13,7 @@
         <module>eureka-server</module>
         <module>rabbitmq-producer</module>
         <module>util-common</module>
+        <module>azure-service-bus</module>
     </modules>
 
     <properties>

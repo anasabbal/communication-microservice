@@ -28,7 +28,7 @@ public class ProducerHandler {
         };
     }
     private DataEvent<String, UserPayload> getUserPayload() {
-        UserPayload user = new UserPayload("anas", "anas@gmail.com", "Anas");
+        UserPayload user = new UserPayload("btn", "anas@gmail.com", "Anas");
         return new DataEvent<>(EventType.CREATE, null, user);
     }
 }

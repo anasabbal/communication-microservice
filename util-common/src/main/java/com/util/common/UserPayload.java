@@ -9,17 +9,14 @@ import lombok.Setter;
 @Getter
 @Setter
 @NoArgsConstructor
-@AllArgsConstructor
 public class UserPayload {
     private String id;
-    private String username;
-    private String email;
-    private String name;
-    private String serviceAddress;
+    private String firstName;
+    private String lastName;
 
-    public UserPayload(String username, String email, String name) {
-        this.username = username;
-        this.email = email;
-        this.name = name;
+    public UserPayload(String id, String firstName, String lastName) {
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
     }
 }

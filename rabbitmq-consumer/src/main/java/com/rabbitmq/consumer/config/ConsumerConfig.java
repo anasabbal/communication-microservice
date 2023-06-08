@@ -12,6 +12,7 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class ConsumerConfig {
+
     @Value("${spring.rabbitmq.host}")
     public String host;
 
