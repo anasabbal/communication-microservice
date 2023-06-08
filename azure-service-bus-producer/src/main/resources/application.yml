@@ -1,0 +1,16 @@
+spring:
+  jms:
+    servicebus:
+      connection-string: Endpoint=sb://customerbus.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=vJRQY/S7WV64+zw/FUrxjeCh5JnayYK3Y+ASbNvvDq4=
+      idle-timeout: 1800000
+      pricing-tier: Standard
+      topic-client-id: c05a64b3-b922-4bb7-a33b-e97fdaa2019c
+
+server:
+  port: 2001
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka

@@ -14,6 +14,8 @@
         <module>rabbitmq-producer</module>
         <module>util-common</module>
         <module>azure-service-bus</module>
+        <module>azure-service-bus-consumer</module>
+        <module>azure-service-bus-producer</module>
     </modules>
 
     <properties>

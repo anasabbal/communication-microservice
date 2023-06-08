@@ -1,4 +1,4 @@
-package com.azure.servicehub.config;
+package com.azure.consumer.config;
 
 
 import com.util.common.ConnectionStringResolver;
@@ -16,8 +16,7 @@ import org.springframework.jms.connection.CachingConnectionFactory;
 
 @EnableJms
 @Configuration
-public class ServiceBusConfiguration {
-
+public class ServiceBusConfig {
 
     @Value("${spring.jms.servicebus.connection-string}")
     private String connectionString;

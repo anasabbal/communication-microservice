@@ -1,4 +1,4 @@
-package com.azure.servicehub.payload;
+package com.util.common;
 
 
 import lombok.Getter;
