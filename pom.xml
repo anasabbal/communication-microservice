@@ -16,6 +16,7 @@
         <module>azure-service-bus</module>
         <module>azure-service-bus-consumer</module>
         <module>azure-service-bus-producer</module>
+        <module>rabibitmq-java-client</module>
     </modules>
 
     <properties>
