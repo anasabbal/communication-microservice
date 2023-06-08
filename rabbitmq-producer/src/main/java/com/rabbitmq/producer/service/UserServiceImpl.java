@@ -30,6 +30,6 @@ public class UserServiceImpl implements UserService{
         DataEvent<String, UserPayload> event = new DataEvent<>(EventType.CREATE, null, userPayload);
         boolean sent = streamBridge.send(PRODUCER_BINDING_NAME, event);
         userRepository.save(User.create(userPayload));
-        return sent ? Mono.just(userPayload).log("USER PAYLOAD CREATED GOOD!") : Mono.error(new BadRequestException("Error streaming data"));
+        return sent ? Mono.just(userPayload).log("User created successfully !") : Mono.error(new BadRequestException("Error streaming data"));
     }
 }
