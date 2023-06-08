@@ -4,7 +4,7 @@ spring:
       connection-string: ${SERVICE-BUS-CONNECTION}
       idle-timeout: 1800000
       pricing-tier: Standard
-      topic-client-id: c05a64b3-b922-4bb7-a33b-e97fdaa2019c
+      topic-client-id: ${CLIENT-ID}
 
 eureka:
   client:
